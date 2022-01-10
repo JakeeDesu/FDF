@@ -17,8 +17,8 @@ void	c_grade(t_obj obj, t_elem *e)
 	int		i;
 	int		z;
 
-	i = (e->v.z > 0) ? 1 : -1;
-	z = (vector_magnitude(obj.l.hat.k) * (e->v.z * i)) + (obj.pal.size.x / 3);
+	i = ((e->v.z) >= 0) ? 8 : 1;
+	z = (vector_magnitude(obj.l.hat.k) * (e->v.z * i )) + (obj.pal.size.x / 3);
 	z %= (obj.pal.size.x);
 	if (e->v.z)
 		c_to_c(&(e->p.color), obj.pal.map[0][z].color);

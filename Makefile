@@ -1,6 +1,7 @@
-MINILIBX = ./minilibx_macos
-SRC = *.c
-LIB = -lm -L./libft -lft -L$(MINILIBX) -lmlx -framework OpenGL -framework AppKit
+SRC_FOLDER = ./src
+MINILIBX = $(SRC_FOLDER)/minilibx_macos
+SRC = $(SRC_FOLDER)/*.c
+LIB = -lm -L./$(SRC_FOLDER)/libft -lft -L$(MINILIBX) -lmlx -framework OpenGL -framework AppKit
 NAME = fdf
 
 all :
@@ -9,4 +10,9 @@ all :
 
 clean:
 	make clean -C $(MINILIBX)
-	rm -rf *.o $(NAME)
+	rm -rf $(SRC_FOLDER)/*.o 
+
+fclean: clean
+	rm -rf $(NAME)
+
+re: fclean all 

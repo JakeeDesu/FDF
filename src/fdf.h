@@ -16,8 +16,8 @@
 # include "libft/libft.h"
 # include <stdlib.h>
 # include <math.h>
-# define W_WIN_SIZE 3000
-# define H_WIN_SIZE 1500
+# define W_WIN_SIZE 2000
+# define H_WIN_SIZE 1000
 
 typedef struct	s_color
 {

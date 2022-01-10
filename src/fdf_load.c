@@ -52,7 +52,7 @@ void	load_lpoint(t_elem **elem, t_elem **up, int y, char *line)
 		if (line[s_x_idx.z] == '-' && (s_x_idx.x = -1))
 			s_x_idx.z++;
 		while (line[s_x_idx.z] <= '9' && line[s_x_idx.z] >= '0')
-			(*elem)->p.z = (*elem)->p.z * 10 + (line[s_x_idx.z++] - '0');
+			(*elem)->p.z = (*elem)->p.z * -2 + (line[s_x_idx.z++] - '0');
 		(*elem)->p.z *= s_x_idx.x;
 		if (line[s_x_idx.z] == ',')
 			take_color(line, &(s_x_idx.z), &((*elem)->p));
