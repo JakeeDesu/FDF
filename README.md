@@ -1,14 +1,5 @@
 # FDF
-fdf is a 3D wireframe viewer / editor program that desplays your height map files.
-
-it comes with these features :
-- colors in file        -> colors specified in "height map files" are allowed
-- rotate                -> all axis (x, y, z)
-- translate             -> two axis (x, y)
-- scale                 -> (entire object) or (z only)
-- color gradient
-- fill areas
-- color editing         -> colors palette (generated) | resizable brush tool | fill with color
+fdf is a 3D wireframe viewer / editor program that displays a 3D representation of height map files.
 
 # tools
   * C language  :
@@ -17,6 +8,16 @@ it comes with these features :
     - a micro framework that provides : window creation, coloring a pixel on a window, event management, runing loop.
   * makefile    :
     - compiles the program's source code.
+
+# features
+it comes with these features :
+- allowed colors in file -> colors specified in "height map files" are allowed
+- rotations                 -> all axis (x, y, z)
+- translations              -> two axis (x, y)
+- scaling                   -> (entire object) or (z only)
+- color gradient
+- fill areas
+- color editing             -> colors palette (generated) | resizable brush tool | fill with color
 
 # run
   - $> clone repo
